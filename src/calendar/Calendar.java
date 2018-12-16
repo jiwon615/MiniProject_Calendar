@@ -14,10 +14,17 @@ public class Calendar {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		Calendar cal = new Calendar(); //클래스에 대한 객체 생성 
-		System.out.println("달을 입력하세요.");
-		int month = scanner.nextInt();  //입력받는 달은 정수형 
-		System.out.println(month + "월은 " + cal.getMaxDaysOfMonth(month) + "일까지 있습니다.");  //클래스의 함수 사용하므로 cal.getMaxDaysOfMonth(month)
 		
+		System.out.println("반복 횟수를 입력하세요.");
+		int repeat = scanner.nextInt();
+		
+		for (int i = 0; i < repeat; i++) {
+			System.out.println("달을 입력하세요.");
+			int month = scanner.nextInt();  //입력받는 달은 정수형 
+			System.out.println(month + "월은 " + cal.getMaxDaysOfMonth(month) + "일까지 있습니다.");  //클래스의 함수 사용하므로 cal.getMaxDaysOfMonth(month)
+		}
+		
+		System.out.println("Bye~");	
 		scanner.close();
 
 
